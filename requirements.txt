@@ -1,1 +1,5 @@
-aiogram>=3.31.0,<4\nasyncpg>=0.30,<1\nyt-dlp[default]>=2025.1.0\npython-dotenv>=1.0,<2\nboto3>=1.35,<2\n
+aiogram>=3.31.0,<4
+asyncpg>=0.30,<1
+yt-dlp[default]>=2025.1.0
+python-dotenv>=1.0,<2
+boto3>=1.35,<2
