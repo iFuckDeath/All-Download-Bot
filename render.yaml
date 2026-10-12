@@ -1,0 +1,21 @@
+services:
+  - type: worker
+    name: telegram-media-bot
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: scale
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: MAX_ACTIVE_JOBS
+        value: "2"
+      - key: MAX_JOBS_PER_USER
+        value: "1"
+      - key: MAX_FILE_BYTES
+        value: "51380224"
